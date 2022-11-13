@@ -13,9 +13,9 @@ con.on('open', () => {
 
 app.use(express.json());
 
-const alienRoutes = require('./routes/aliens');
+const userRoutes = require('./routes/user');
 
-app.use('/aliens', alienRoutes);
+app.use('/users', userRoutes);
 
 app.listen(9000, () => {
     console.log('Listeing to', 9000);
